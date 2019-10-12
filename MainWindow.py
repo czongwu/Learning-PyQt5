@@ -1,0 +1,103 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'MainWindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.1
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.setEnabled(True)
+        MainWindow.resize(680, 480)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(570, 380, 81, 32))
+        self.pushButton.setObjectName("pushButton")
+        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget.setGeometry(QtCore.QRect(10, 110, 111, 50))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.layoutWidget)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.checkBox = QtWidgets.QCheckBox(self.layoutWidget)
+        self.checkBox.setEnabled(True)
+        self.checkBox.setChecked(True)
+        self.checkBox.setObjectName("checkBox")
+        self.verticalLayout.addWidget(self.checkBox)
+        self.lineEdit = QtWidgets.QLineEdit(self.layoutWidget)
+        self.lineEdit.setObjectName("lineEdit")
+        self.verticalLayout.addWidget(self.lineEdit)
+        self.webEngineView = QtWebEngineWidgets.QWebEngineView(self.centralwidget)
+        self.webEngineView.setGeometry(QtCore.QRect(140, 0, 511, 371))
+        self.webEngineView.setUrl(QtCore.QUrl("https://www.zwcloud.top/"))
+        self.webEngineView.setObjectName("webEngineView")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.menuBar = QtWidgets.QMenuBar(MainWindow)
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 680, 22))
+        self.menuBar.setObjectName("menuBar")
+        self.menu = QtWidgets.QMenu(self.menuBar)
+        self.menu.setObjectName("menu")
+        MainWindow.setMenuBar(self.menuBar)
+        self.toolBar = QtWidgets.QToolBar(MainWindow)
+        font = QtGui.QFont()
+        font.setFamily("STHeiti")
+        font.setPointSize(14)
+        self.toolBar.setFont(font)
+        self.toolBar.setOrientation(QtCore.Qt.Horizontal)
+        self.toolBar.setToolButtonStyle(QtCore.Qt.ToolButtonTextOnly)
+        self.toolBar.setObjectName("toolBar")
+        MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.toolBar)
+        self.actionnew = QtWidgets.QAction(MainWindow)
+        self.actionnew.setObjectName("actionnew")
+        self.actionopen = QtWidgets.QAction(MainWindow)
+        self.actionopen.setObjectName("actionopen")
+        self.actionsave = QtWidgets.QAction(MainWindow)
+        self.actionsave.setObjectName("actionsave")
+        self.actionclose = QtWidgets.QAction(MainWindow)
+        self.actionclose.setObjectName("actionclose")
+        self.menu.addAction(self.actionnew)
+        self.menu.addAction(self.actionopen)
+        self.menu.addAction(self.actionsave)
+        self.menu.addAction(self.actionclose)
+        self.menuBar.addAction(self.menu.menuAction())
+        self.toolBar.addAction(self.actionnew)
+        self.toolBar.addAction(self.actionopen)
+        self.toolBar.addAction(self.actionsave)
+        self.toolBar.addAction(self.actionclose)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton.clicked['bool'].connect(MainWindow.close)
+        self.checkBox.toggled['bool'].connect(self.lineEdit.setVisible)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.pushButton.setText(_translate("MainWindow", "退出"))
+        self.checkBox.setText(_translate("MainWindow", "显示/隐藏"))
+        self.menu.setTitle(_translate("MainWindow", "文件"))
+        self.toolBar.setWindowTitle(_translate("MainWindow", "toolBar"))
+        self.actionnew.setText(_translate("MainWindow", "新建"))
+        self.actionnew.setToolTip(_translate("MainWindow", "创建新文件"))
+        self.actionopen.setText(_translate("MainWindow", "打开"))
+        self.actionopen.setToolTip(_translate("MainWindow", "打开文件"))
+        self.actionsave.setText(_translate("MainWindow", "保存"))
+        self.actionsave.setToolTip(_translate("MainWindow", "保存文件"))
+        self.actionclose.setText(_translate("MainWindow", "关闭"))
+        self.actionclose.setToolTip(_translate("MainWindow", "关闭文件"))
+from PyQt5 import QtWebEngineWidgets
