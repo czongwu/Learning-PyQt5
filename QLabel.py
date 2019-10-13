@@ -30,7 +30,7 @@ class QLabelDeamo(QWidget):
         label3.setToolTip('这是一个图片标签')
         label3.setPixmap(QPixmap('./img/python.jpg'))
 
-        label4.setOpenExternalLinks(False)  # 当bool值为True时，浏览器打开网页，当值为False时，响应槽方法
+        label4.setOpenExternalLinks(True)  # 当bool值为True时，浏览器打开网页，当值为False时，响应槽方法
         label4.setText("<a href='https://zwcloud.top'>陈宗武的个人博客</a>")
         label4.setAlignment(Qt.AlignRight)
         label4.setToolTip('这是一个超级链接')
@@ -49,7 +49,9 @@ class QLabelDeamo(QWidget):
 
         self.setLayout(vbox)
         self.setWindowTitle('QLabel控件示例')
+        self.setWindowIcon(QIcon('./img/konglong.ico'))
         self.resize(640, 480)
+
 
     def linkHovered(self):
         print('当鼠标滑过Label2时，触发事件')
@@ -66,7 +68,7 @@ class QLabelDeamo(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    app.setWindowIcon(QIcon('./img/konglong.ico'))
+    # app.setWindowIcon(QIcon('./img/konglong.ico'))
     main = QLabelDeamo()
     main.show()
     sys.exit(app.exec_())
