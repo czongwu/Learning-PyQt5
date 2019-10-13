@@ -49,7 +49,6 @@ class QLabelDeamo(QWidget):
 
         self.setLayout(vbox)
         self.setWindowTitle('QLabel控件示例')
-        self.setWindowIcon(QIcon('./img/konglong.ico'))
         self.resize(640, 480)
 
 
@@ -68,7 +67,7 @@ class QLabelDeamo(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    # app.setWindowIcon(QIcon('./img/konglong.ico'))
+    app.setWindowIcon(QIcon('./img/konglong.ico'))
     main = QLabelDeamo()
     main.show()
     sys.exit(app.exec_())
