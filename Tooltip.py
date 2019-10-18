@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import sys
-from PyQt5.QtWidgets import QHBoxLayout, QPushButton, QWidget, QApplication, QMainWindow, QToolTip
-from PyQt5.QtGui import QFont, QIcon
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import *
 
 
 class Tooltip(QMainWindow):
