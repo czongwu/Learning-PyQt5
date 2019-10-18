@@ -24,7 +24,7 @@ class Tooltip(QMainWindow):
         mainFrame.setLayout(layout)
         self.setCentralWidget(mainFrame)
 
-if __name__ == '__main__':
+if __name__ == "__main__":  
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon('./img/konglong.ico'))
     main = Tooltip()
