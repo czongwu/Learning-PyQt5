@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# 笔记示例文件
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
