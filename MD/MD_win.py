@@ -39,7 +39,6 @@ class MD_window(QWidget):
     def show_text_func(self):
         self.text_browser.setText(self.text_edit.toPlainText())
 
-
 # if __name__ == '__main__':
 #     app = QApplication(sys.argv)
 #     main_win = MD_window()
