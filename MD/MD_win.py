@@ -11,7 +11,7 @@ class MD_window(QWidget):
         self.browser_label = QLabel('TextBrowser', self)
         self.text_edit = QTextEdit(self)
         self.text_browser = QTextBrowser(self)
-        self.setWindowIcon(QIcon('E:\Learning-PyQt5\img\konglong.ico'))
+        self.setWindowIcon(QIcon('./img/konglong.ico'))
 
         self.edit_v_layout = QVBoxLayout()
         self.browser_v_layout = QVBoxLayout()
