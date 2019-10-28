@@ -7,12 +7,13 @@ from PyQt5.QtGui import *
 class MD_window(QWidget):
     def __init__(self):
         super(MD_window, self).__init__()
+        # 控件
         self.edit_label = QLabel('TextEditor', self)
         self.browser_label = QLabel('TextBrowser', self)
         self.text_edit = QTextEdit(self)
         self.text_browser = QTextBrowser(self)
-        self.setWindowIcon(QIcon('E:\Learning-PyQt5\img\konglong.ico'))
 
+        # 布局
         self.edit_v_layout = QVBoxLayout()
         self.browser_v_layout = QVBoxLayout()
         self.all_h_layout = QHBoxLayout()
@@ -20,7 +21,7 @@ class MD_window(QWidget):
         self.layout_init()
         self.text_edit_init()
 
-    def layout_init(self):
+    def layout_init(self):  # 布局添加控件
         self.edit_v_layout.addWidget(self.edit_label)
         self.edit_v_layout.addWidget(self.text_edit)
 
@@ -42,5 +43,6 @@ class MD_window(QWidget):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     main_win = MD_window()
+    main_win.setWindowIcon(QIcon('./img/konglong.ico'))
     main_win.show()
     sys.exit(app.exec_())
