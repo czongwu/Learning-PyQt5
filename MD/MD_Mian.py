@@ -35,11 +35,13 @@ class Ui_Form(object):
         self.textBrowser.setObjectName("textBrowser")
 
         self.retranslateUi(Form)
-        self.textBrowser.textChanged.connect(self.textEdit_2.selectAll)
-        self.textBrowser.currentCharFormatChanged['QTextCharFormat'].connect(self.textEdit_2.selectAll)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.pushButton.setText(_translate("Form", "PushButton"))
+    def text_edit_init(self):
+        self.textEdit_2.textChanged.connect(self.show_text_func)
+    def show_text_func(self):
+        self.textBrowser.setText(self.textEdit_2.toPlainText())
