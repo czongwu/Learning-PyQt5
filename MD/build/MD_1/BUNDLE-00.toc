@@ -1,0 +1,3 @@
+([('MD_1',
+   '/Users/chenzongwu/Documents/Learning-PyQt5/MD/dist/MD_1',
+   'EXECUTABLE')],)
