@@ -60,5 +60,38 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>textEdit_2</sender>
+   <signal>textChanged()</signal>
+   <receiver>textEdit_2</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>287</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>287</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>textBrowser</sender>
+   <signal>currentCharFormatChanged(QTextCharFormat)</signal>
+   <receiver>textBrowser</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>834</x>
+     <y>580</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>834</x>
+     <y>580</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

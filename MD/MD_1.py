@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import MD_Mian
+from MD import MD_Mian
 import sys
 from PyQt5.QtWidgets import *
 

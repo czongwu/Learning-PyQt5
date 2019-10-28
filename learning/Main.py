@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 import sys
-import MainWindow
+from learning import MainWindow
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 
