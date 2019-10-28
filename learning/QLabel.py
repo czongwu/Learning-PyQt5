@@ -71,3 +71,4 @@ if __name__ == '__main__':
     main = QLabelDeamo()
     main.show()
     sys.exit(app.exec_())
+
