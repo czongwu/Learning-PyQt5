@@ -1,13 +1,8 @@
 # -*- coding: utf-8 -*-
 from MD import MD_win
-import sys
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
 
 if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    mainwindow = QWidget()
-    mainwindow.setWindowIcon(QIcon('./img/konglong.ico'))
-    ui = MD_win.MD_window()
-    mainwindow.show()
-    sys.exit(app.exec_())
+    app = MD_win.QApplication(MD_win.sys.argv)
+    main_win = MD_win.MD_window()
+    main_win.show()
+    MD_win.sys.exit(app.exec_())
