@@ -12,6 +12,7 @@ class MD_window(QWidget):
         self.text_edit = QTextEdit(self)
         self.text_browser = QTextBrowser(self)
         self.setWindowIcon(QIcon('./img/konglong.ico'))
+        self.resize(800, 600)
 
         self.edit_v_layout = QVBoxLayout()
         self.browser_v_layout = QVBoxLayout()
@@ -39,8 +40,8 @@ class MD_window(QWidget):
         self.text_browser.setText(self.text_edit.toPlainText())
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    main_win = MD_window()
-    main_win.show()
-    sys.exit(app.exec_())
+# if __name__ == '__main__':
+#     app = QApplication(sys.argv)
+#     main_win = MD_window()
+#     main_win.show()
+#     sys.exit(app.exec_())
