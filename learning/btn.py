@@ -7,7 +7,7 @@ from PyQt5.QtGui import *
 
 class signal_and_slot(QWidget):  # 定义主类
     def __init__(self):
-        super().__init__()
+        super(signal_and_slot, self).__init__()
         self.initUI()
 
     def initUI(self):
@@ -23,7 +23,7 @@ class signal_and_slot(QWidget):  # 定义主类
 
     def onClick_Button(self):  # 定义点击事件
         sender = self.sender()
-        print(sender.Text() + '点击事件')
+        print(sender.text() + '按钮被按下')
         app = QApplication.instance()
         app.quit()
 
