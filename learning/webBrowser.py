@@ -16,7 +16,7 @@ class webBrowser(QMainWindow):
         self.setGeometry(480, 100, 1024, 768)
         self.setWindowTitle('zw浏览器')
         self.webEngineView = QtWebEngineWidgets.QWebEngineView()
-        self.webEngineView.setUrl(QtCore.QUrl("https://www.zwcloud.top/"))
+        self.webEngineView.setUrl(QtCore.QUrl(''))
 
         self.button1 = QPushButton('My Button')
         # self.button1.setToolTip('这是一个按钮，Are you ok?')

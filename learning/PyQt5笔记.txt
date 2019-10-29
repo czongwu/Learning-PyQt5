@@ -46,3 +46,6 @@ Qlable常用的信号（事件）
 1.当鼠标滑过QLabel控件时触发： linkHovered
 2.当鼠标单击QLabel控件时触发： linkActivate
 
+QLabel与伙伴控件
+
+
